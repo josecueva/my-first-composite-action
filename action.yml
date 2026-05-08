@@ -8,7 +8,7 @@ inputs:
 outputs:
   random-number:
     description: 'Random number'
-    value: '${{World}}'
+    value: '${{ steps.random-number-generator.outputs.random_number }}'
 runs:
   using: composite
   steps:
