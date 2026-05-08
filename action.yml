@@ -20,7 +20,7 @@ runs:
 
     - name: Random Generator
       id: random-number-generator
-      run: echo "random_number=${echo $RANDOM}" >> $GITHUB_OUTPUT
+      run: echo "random-number=$(echo $RANDOM)" >> $GITHUB_OUTPUT
       shell: bash
 
     - name: Set Github Path
