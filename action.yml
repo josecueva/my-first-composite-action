@@ -13,7 +13,7 @@ runs:
   using: composite
   steps:
     - name: Says greeting
-      run: echo "Hello ${{ inputs.INPUT_WHO_TO_GREET }}""
+      run: echo "Hello $INPUT_WHO_TO_GREET"
       shell: bash
       env:
         INPUT_WHO_TO_GREET: ${{ inputs.name }}
